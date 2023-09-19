@@ -1,0 +1,56 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"scopeName": "source.shiika",
+	"fileTypes": [
+		"sk"
+	],
+	"patterns": [
+		{
+			"name": "comment.line.shiika",
+			"match": "#.*$"
+		},
+		{
+			"name": "keyword.control.shiika",
+			"match": "\\b(let|var|def|loop|do|if|elsif|else|end|return|true|false|match|when|case|unless|while|break)\\b"
+		},
+		{
+			"name": "constant.numeric.shiika",
+			"match": "\\b\\d+(\\.\\d+)?\\b"
+		},
+		{
+			"name": "constant.language.boolean.shiika",
+			"match": "\\b(true|false)\\b"
+		},
+		{
+			"name": "string.quoted.double.shiika",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.shiika",
+					"match": "\\\\[btnfr\"'\\\\]"
+				}
+			]
+		},
+		{
+			"name": "support.class.shiika",
+			"match": "\\b(Bool|Int|Float|String|Array|Dict|Maybe|Result|Error)\\b"
+		},
+		{
+			"name": "variable.other.readwrite.shiika",
+			"match": "@?[a-z][a-zA-Z0-9_]*"
+		},
+		{
+			"name": "entity.name.function.shiika",
+			"match": "\\b[a-z][a-zA-Z0-9_]*\\b(?=\\()"
+		},
+		{
+			"name": "entity.name.class.shiika",
+			"match": "\\b[A-Z][a-zA-Z0-9_]*\\b"
+		},
+		{
+			"name": "keyword.operator.logical.shiika",
+			"match": "\\b(and|or|not)\\b"
+		}
+	]
+}

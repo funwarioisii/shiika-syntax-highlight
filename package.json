@@ -1,0 +1,25 @@
+{
+  "name": "shiika-syntax-highlight",
+  "displayName": "shiika-syntax-highlight",
+  "description": "syntax highlight plugin for shiika",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "shiika",
+      "aliases": ["shiika"],
+      "extensions": ["sk"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "shiika",
+      "scopeName": "source.shiika",
+      "path": "./syntaxes/shiika.tmLanguage.json"
+    }]
+  }
+}
