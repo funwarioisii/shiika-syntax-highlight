@@ -1,5 +1,6 @@
 {
   "name": "shiika-syntax-highlight",
+  "publisher": "funwarioisii",
   "displayName": "shiika-syntax-highlight",
   "description": "syntax highlight plugin for shiika",
   "version": "0.0.1",
@@ -21,5 +22,9 @@
       "scopeName": "source.shiika",
       "path": "./syntaxes/shiika.tmLanguage.json"
     }]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/funwarioisii/shiika-syntax-highlight.git"
   }
 }
